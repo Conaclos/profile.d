@@ -74,8 +74,8 @@ If not set, `VISUAL` is set in the next priority order: `most`, `less`, `more`.
 A simple example :
 
 ```ini
-PAGER=/usr/bin/less
-VISUAL=/usr/bin/vim
+PAGER=less
+VISUAL=vim
 ```
 
 Use `command -v` to know the absolute path of the program.
