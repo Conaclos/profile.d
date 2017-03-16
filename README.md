@@ -57,10 +57,13 @@ LC_COLLATE=C
 LC_TIME=en_DK.UTF-8
 ```
 
-## User programs
+## User profiles and programs
 
-Create the file `${XDG_CONFIG_HOME:-$HOME'/.config'}/programs.conf` and set
- one or more variables among :
+Create the folder `${XDG_CONFIG_HOME:-$HOME'/.config'}/profile.d`.
+Every file in this directory with the extension `.sh` are sourced.
+
+For instance, you can create a file `programs.sh` and export some of the next
+variables:
 
 - `BROWSER`: path to a web browser.
 - `EDITOR`: path to a lightweight editor for text file editing. e.g. nano
@@ -73,12 +76,10 @@ If not set, `VISUAL` is set in the next priority order: `most`, `less`, `more`.
 
 A simple example :
 
-```ini
-PAGER=less
-VISUAL=vim
+```sh
+export PAGER=less
+export VISUAL=vim
 ```
-
-Use `command -v` to know the absolute path of the program.
 
 ## XDG base dirs
 
