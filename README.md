@@ -36,12 +36,12 @@ fi
 Create the file `${XDG_CONFIG_HOME:-$HOME'/.config'}/dir_colors` and set
 your own configuration. See the `dir_colors` man page for more details.
 
-Alterbatively, you can use an existing configuration, such as a
+Alternatively, you can use an existing configuration, such as
  [solarized theme][dircolors-solarized].
 
 Note that some projects prefer `dircolors` instead of `dir_colors`.
 
-To enable colors use the `--color=auto` on ls-related commands.
+To enable colors use the `--color=auto` on `ls` and related commands.
 
 ## User locales
 
@@ -72,7 +72,7 @@ variables:
 
 If not set, `EDITOR` is set to the value of `VISUAL`.
 
-If not set, `VISUAL` is set in the next priority order: `most`, `less`, `more`.
+If not set, `PAGER` is set in the next priority order: `most`, `less`, `more`.
 
 A simple example :
 
