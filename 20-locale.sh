@@ -5,6 +5,7 @@
 #
 
 if test -r "${XDG_CONFIG_HOME:-$HOME/.config}"'/locale.conf'; then
+    # shellcheck source=/dev/null
     . "${XDG_CONFIG_HOME:-$HOME/.config}"'/locale.conf'
 elif test -r '/etc/locale.conf'; then
     . '/etc/locale.conf'

@@ -12,6 +12,6 @@
 if test -r "${XDG_CONFIG_HOME:-$HOME/.config}"'/dir_colors'; then
     eval "$(dircolors ${XDG_CONFIG_HOME:-$HOME/.config}/dir_colors)"
 elif test -r '/etc/dir_colors'; then
-    eval $(dircolors '/etc/dir_colors')
+    eval "$(dircolors /etc/dir_colors)"
 fi
 

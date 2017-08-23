@@ -5,6 +5,7 @@
 #
 
 if test -r "${XDG_CONFIG_HOME:-$HOME/.config}"'/user-dirs.dirs'; then
+    # shellcheck source=/dev/null
     . "${XDG_CONFIG_HOME:-$HOME/.config}"'/user-dirs.dirs';
 
     test -n "$XDG_DESKTOP_DIR" && export XDG_DESKTOP_DIR
