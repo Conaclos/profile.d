@@ -4,13 +4,13 @@
 # Copyright (c) 2017 Victorien Elvinger
 #
 
-if test -r ${XDG_CONFIG_HOME:-$HOME'/.config'}'/locale.conf'; then
-    . ${XDG_CONFIG_HOME:-$HOME'/.config'}'/locale.conf'
+if test -r "${XDG_CONFIG_HOME:-$HOME/.config}"'/locale.conf'; then
+    . "${XDG_CONFIG_HOME:-$HOME/.config}"'/locale.conf'
 elif test -r '/etc/locale.conf'; then
     . '/etc/locale.conf'
 fi
 
-export LANG=${LANG:-'C'}
+export LANG="${LANG:-C}"
 
 test -n "$LC_ADDRESS" && export LC_ADDRESS
 test -n "$LC_COLLATE" && export LC_COLLATE

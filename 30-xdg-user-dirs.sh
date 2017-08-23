@@ -4,8 +4,8 @@
 # Copyright (c) 2017 Victorien Elvinger
 #
 
-if test -r ${XDG_CONFIG_HOME:-$HOME'/.config'}'/user-dirs.dirs'; then
-    . ${XDG_CONFIG_HOME:-$HOME'/.config'}'/user-dirs.dirs';
+if test -r "${XDG_CONFIG_HOME:-$HOME/.config}"'/user-dirs.dirs'; then
+    . "${XDG_CONFIG_HOME:-$HOME/.config}"'/user-dirs.dirs';
 
     test -n "$XDG_DESKTOP_DIR" && export XDG_DESKTOP_DIR
     test -n "$XDG_DOCUMENTS_DIR" && export XDG_DOCUMENTS_DIR
