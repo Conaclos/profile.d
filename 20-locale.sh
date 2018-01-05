@@ -1,12 +1,11 @@
-#!/bin/sh
 #
-# zlib license
 # Copyright (c) 2017 Victorien Elvinger
+# Licensed under the zlib license (https://opensource.org/licenses/zlib).
 #
 
-if test -r "${XDG_CONFIG_HOME:-$HOME/.config}"'/locale.conf'; then
+if test -r "${XDG_CONFIG_HOME:-"$HOME/.config"}/locale.conf"; then
     # shellcheck source=/dev/null
-    . "${XDG_CONFIG_HOME:-$HOME/.config}"'/locale.conf'
+    . "${XDG_CONFIG_HOME:-"$HOME/.config"}/locale.conf"
 elif test -r '/etc/locale.conf'; then
     . '/etc/locale.conf'
 fi

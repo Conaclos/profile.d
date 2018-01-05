@@ -1,12 +1,11 @@
-#!/bin/sh
 #
-# zlib license
 # Copyright (c) 2017 Victorien Elvinger
+# Licensed under the zlib license (https://opensource.org/licenses/zlib).
 #
 
-if test -r "${XDG_CONFIG_HOME:-$HOME/.config}"'/user-dirs.dirs'; then
+if test -r "${XDG_CONFIG_HOME:-"$HOME/.config"}/user-dirs.dirs"; then
     # shellcheck source=/dev/null
-    . "${XDG_CONFIG_HOME:-$HOME/.config}"'/user-dirs.dirs';
+    . "${XDG_CONFIG_HOME:-"$HOME/.config"}/user-dirs.dirs";
 
     test -n "$XDG_DESKTOP_DIR" && export XDG_DESKTOP_DIR
     test -n "$XDG_DOCUMENTS_DIR" && export XDG_DOCUMENTS_DIR
