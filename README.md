@@ -23,7 +23,9 @@ Finally, add the next lines in the file `/etc/profile`.
 ```sh
 if test -d '/etc/profile.d/'; then
     for f in /etc/profile.d/*.sh; do
-        test -r $f && . $f
+        if test -r "$f"; then
+          . "$f"
+        fi
     done
     unset f
 fi

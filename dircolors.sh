@@ -1,7 +1,5 @@
-#
 # Copyright (c) 2017 Victorien Elvinger
 # Licensed under the zlib license (https://opensource.org/licenses/zlib).
-#
 
 # ls utility colors according to filetypes
 # user-wide: $XDG_CONFIG_HOME/dir_colors
@@ -13,4 +11,3 @@ if test -r "${XDG_CONFIG_HOME:-"$HOME/.config"}/dir_colors"; then
 elif test -r '/etc/dir_colors'; then
     eval "$(dircolors '/etc/dir_colors')"
 fi
-

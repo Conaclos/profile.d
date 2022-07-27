@@ -1,7 +1,5 @@
-#
 # Copyright (c) 2017 Victorien Elvinger
 # Licensed under the zlib license (https://opensource.org/licenses/zlib).
-#
 
 # https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
 
@@ -19,4 +17,3 @@
     # Preference-ordered set of dirs seperated with a colon ':'.
 
 # $XDG_RUNTIME_DIR should be set by the system. Its access mode MUST be 0700
-
