@@ -43,8 +43,6 @@ Alternatively, you can use an existing configuration, such as
 
 Note that some projects prefer `dircolors` instead of `dir_colors`.
 
-To enable colors use the `--color=auto` on `ls` and related commands.
-
 ## User locales
 
 Create the file `${XDG_CONFIG_HOME:-$HOME'/.config'}/locale.conf`.
