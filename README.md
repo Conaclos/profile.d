@@ -59,7 +59,7 @@ LC_TIME=en_DK.UTF-8
 
 ## User profiles and programs
 
-Create the folder `${XDG_CONFIG_HOME:-$HOME'/.config'}/profile.d`.
+Create the folder `${XDG_CONFIG_HOME:-"$HOME/.config"}/profile.d`.
 Every file in this directory with the extension `.sh` are sourced.
 
 For instance, you can create a file `programs.sh` and export some of the next
@@ -77,7 +77,7 @@ If not set, `PAGER` is set in the next priority order: `most`, `less`, `more`.
 A simple example :
 
 ```sh
-export PAGER=less
+export PAGER=more
 export VISUAL=vim
 ```
 
@@ -96,7 +96,7 @@ A more partical tutorial is available on the [ArchLinux wiki][userdirs-arch].
 
 ## Less
 
-Prevent less to write a less history at the home user directory.
+Prevent less to write an history at the home user directory.
 
 ## SSH
 
@@ -105,7 +105,7 @@ If the SSH agent is running then the needed environment variable in order to
 
 ## User path
 
-If the user is in the administrator group `wheel` then the directory
+If the user is in the administrator group `wheel`, then the directory
  `$HOME/.local/bin` is added to the `PATH` variable.
 
 ## Xorg server
