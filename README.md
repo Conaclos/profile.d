@@ -42,6 +42,7 @@ Alternatively, you can use an existing configuration, such as
  [solarized theme][dircolors-solarized].
 
 Note that some projects prefer `dircolors` instead of `dir_colors`.
+We support also this name.
 
 ## User locales
 
