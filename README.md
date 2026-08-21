@@ -1,4 +1,5 @@
 
+
 We aim to provide a set of scripts to set the user shell environment.
 
 The scripts are
@@ -16,7 +17,7 @@ Create the directory `/etc/profile.d`.
 mkdir /etc/profile.d
 ```
 
-Copy all the scripts from this repository in `/etc/profilei.d`.
+Copy all the scripts from this repository in `/etc/profile.d`.
 
 Finally, add the next lines in the file `/etc/profile`.
 
@@ -129,4 +130,3 @@ THe file `$HOME/.Xauthority` is moved to `$XDG_RUNTIME_DIR/Xauthority`
 [userdirs-arch]:
     https://wiki.archlinux.org/index.php/XDG_user_directories
     "Arch wiki - XDG user directories"
-
